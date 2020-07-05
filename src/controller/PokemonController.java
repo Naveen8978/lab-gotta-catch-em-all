@@ -38,65 +38,66 @@ public class PokemonController extends HttpServlet {
 		if (value1 != null) {
 			
 			// Create the object for Bulbasaur class and use getters to retrieve the values	
-		/*	  
-			msg = "<center>" + //getter + "  #" + //getter;
-			request.setAttribute("message1",//getter);
-			request.setAttribute("character1", //getter);
-			request.setAttribute("type1",//getter;
-			request.setAttribute("evolution1", //getter);
-			request.setAttribute("baseExp1", //getter);*/
+		  
+	       Bulbasaur b = new bulbasaur() {
+		 
+		 
+			msg = "<center>" + b.getpokemon() + "  #" + b.getPokemon;
+			request.setAttribute("message1",b.getPokemon);
+			request.setAttribute("character1", b.getPokemonr);
+			request.setAttribute("type1",b.getPokemon) ;
+			request.setAttribute("evolution1",b.getPokemonr);
+			request.setAttribute("baseExp1", b.getPokemon);
 		}
 
 		if (value2 != null) {
 			// Create the object for Charizard class and use getters to retrieve the values	
-			
-			/*	  
-			msg = "<center>" + //getter + "  #" + //getter;
-			request.setAttribute("message2",//getter);
-			request.setAttribute("character2", //getter);
-			request.setAttribute("type2",//getter;
-			request.setAttribute("evolution2", //getter);
-			request.setAttribute("baseExp2", //getter);*/
-		}
+			Charizard c = new Charizard();{
+			  
+				msg = "<center>" + b.getpokemon() + "  #" + b.getPokemon;
+				request.setAttribute("message1",b.getPokemon);
+				request.setAttribute("character1", b.getPokemonr);
+				request.setAttribute("type1",b.getPokemon) ;
+				request.setAttribute("evolution1",b.getPokemonr);
+				request.setAttribute("baseExp1", b.getPokemon);
+			}
 
 		if (value3 != null) {
 
 			// Create the object for Dragonite class and use getters to retrieve the values	
 
-			/*	  
-			msg = "<center>" + //getter + "  #" + //getter;
-			request.setAttribute("message3",//getter);
-			request.setAttribute("character3", //getter);
-			request.setAttribute("type3",//getter;
-			request.setAttribute("evolution3", //getter);
-			request.setAttribute("baseExp3", //getter);*/
-		}
+				  Dragonite d = new Dragonite() {
+					  msg = "<center>" + b.getpokemon() + "  #" + b.getPokemon;
+						request.setAttribute("message1",b.getPokemon);
+						request.setAttribute("character1", b.getPokemonr);
+						request.setAttribute("type1",b.getPokemon) ;
+						request.setAttribute("evolution1",b.getPokemonr);
+						request.setAttribute("baseExp1", b.getPokemon);
+					}
 		if (value4 != null) {
 
 			// Create the object for Mew class and use getters to retrieve the values	
-			/*	  
-			msg = "<center>" + //getter + "  #" + //getter;
-			request.setAttribute("message4",//getter);
-			request.setAttribute("character4", //getter);
-			request.setAttribute("type4",//getter;
-			request.setAttribute("evolution4", //getter);
-			request.setAttribute("baseExp4", //getter);*/
-		}
-
+			Mew m = new Mew() {
+				msg = "<center>" + b.getpokemon() + "  #" + b.getPokemon;
+				request.setAttribute("message1",b.getPokemon);
+				request.setAttribute("character1", b.getPokemonr);
+				request.setAttribute("type1",b.getPokemon) ;
+				request.setAttribute("evolution1",b.getPokemonr);
+				request.setAttribute("baseExp1", b.getPokemon);
+			}
 		if (value5 != null) {
 
 			// Create the object for Pikachu class and use getters to retrieve the values	
 /*getter*/
-			/*	  
-			msg = "<center>" + //getter + "  #" + //getter;
-			request.setAttribute("message5",//getter);
-			request.setAttribute("character5", //getter);
-			request.setAttribute("type5",//getter;
-			request.setAttribute("evolution5", //getter);
-			request.setAttribute("baseExp5", //getter);*/
-
-		}
-
+			Pikachu p = new Pikachu() {
+				msg = "<center>" + b.getpokemon() + "  #" + b.getPokemon;
+				request.setAttribute("message1",b.getPokemon);
+				request.setAttribute("character1", b.getPokemonr);
+				request.setAttribute("type1",b.getPokemon) ;
+				request.setAttribute("evolution1",b.getPokemonr);
+				request.setAttribute("baseExp1", b.getPokemon);
+			}
+		
 		RequestDispatcher rd = this.getServletContext().getRequestDispatcher("/WEB-INF/views/pokemon.jsp");
 		rd.forward(request, response);
 
